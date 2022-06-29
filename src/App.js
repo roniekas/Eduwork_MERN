@@ -11,6 +11,7 @@ function App() {
         </p>
         <p>
           <h1>Mencoba perubahan untuk di testing di heroku</h1>
+          <h6>GIT PUSH ORIGIN MAIN</h6>
         </p>
         <a
           className="App-link"
