@@ -6,24 +6,24 @@ class Navbar extends React.Component {
             <div className="container">
                 <nav className="navbar navbar-dark navbar-expand-lg bg-primary">
                     <div className="container-fluid">
-                        <a className="navbar-brand" href="#">Rons Aplication</a>
+                        <p className="navbar-brand">Rons Aplication </p>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                         </button>
                         <div className="collapse navbar-collapse" id="navbarScroll">
                         <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
                             <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#">Home</a>
+                            <p className="nav-link active" aria-current="page" >Home</p>
                             </li>
                             <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <p className="nav-link dropdown-toggle"  id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Pertemuan
-                            </a>
+                            </p>
                             <ul className="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                <li><a className="dropdown-item" href="#">Pertemuan 1</a></li>
-                                <li><a className="dropdown-item" href="#">Pertemuan 2</a></li>
+                                <li><p className="dropdown-item" >Pertemuan 1</p></li>
+                                <li><p className="dropdown-item" >Pertemuan 2</p></li>
                                 <li><hr className="dropdown-divider" /></li>
-                                <li><a className="dropdown-item" href="#">Pertemuan 3</a></li>
+                                <li><p className="dropdown-item" >Pertemuan 3</p></li>
                             </ul>
                             </li>
                         </ul>
