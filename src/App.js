@@ -1,27 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import Tugas1 from "./Tugas/Tugas1";
+import Komponen from "./materi/komponen";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          asd <code>src/App.js</code> and save to reload.
-        </p>
-        <p>
-          <h1>Mencoba perubahan untuk di testing di heroku</h1>
-          <h6>GIT PUSH ORIGIN MAIN</h6>
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Tugas1 />
+      {/* <Komponen /> */}
     </div>
   );
 }
