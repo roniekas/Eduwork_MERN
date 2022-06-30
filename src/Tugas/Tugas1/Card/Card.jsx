@@ -10,7 +10,6 @@ class Card extends React.Component {
                         <div className="card-body">
                             <h5 className="card-title">Breaking News - {this.props.berita}</h5>
                             <p className="card-text">Berita Terbaru dari Rons News.</p>
-                            <a href="#" className="btn btn-primary">Lihat Detail</a>
                         </div>
                     </div>
                 </div>
