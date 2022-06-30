@@ -1,5 +1,4 @@
 import Tugas1 from "./Tugas/Tugas1";
-import Komponen from "./materi/komponen";
 
 function App() {
   return (
