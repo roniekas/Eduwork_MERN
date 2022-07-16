@@ -1,15 +1,20 @@
 import react, { Fragment } from "react";
-import Counter from "./counter";
 import Head from "./head";
 import Product from "./product";
 
 class Reusable extends react.Component {
+    state = {
+        value: 0
+    }
+
+    handleValue = (data) => {
+        this.setState({value: data.data});
+    }
     render(){
         return(
             <Fragment>
-                <Head />
-                <Product /> 
-                <Counter />
+                <Head finalProps={this.state.value}/>
+                <Product receiveValue={this.handleValue}/> 
             </Fragment>
         )
     }

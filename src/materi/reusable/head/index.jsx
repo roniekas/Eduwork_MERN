@@ -15,7 +15,7 @@ const Ndas = styled.h1`
 class Head extends react.Component {
     render(){
         return(
-            <Ndas> 14 </Ndas>
+            <Ndas> {this.props.finalProps} </Ndas>
         )
     }
 }

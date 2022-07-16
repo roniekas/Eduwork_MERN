@@ -1,5 +1,6 @@
 import react from "react";
 import styled from "styled-components";
+import Counter from "../counter";
 
 const ImgSrc = 'https://source.unsplash.com/collection/190727/400x200';
 
@@ -41,6 +42,9 @@ const Judul = styled.h3`
 
 
 class Product extends react.Component {
+    propsHandle = (data) => {
+        this.props.receiveValue({data});
+    }
     render(){
         return(
             <Container>
@@ -48,6 +52,7 @@ class Product extends react.Component {
                 <Judul>Detailed Product</Judul>
                 <Price>Rp. 123.000,-</Price>
                 <Dev>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, et?</Dev>
+                <Counter propsReceive={this.propsHandle}/>
             </Container>
         )
     }

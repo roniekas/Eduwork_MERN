@@ -18,15 +18,33 @@ const Button = styled.button`
 const Input = styled.input`
     width: 320px;
     height: 45px;
+    text-align: center;
 `;
 
 class Counter extends react.Component {
+    state = {
+        value: 0
+    }
+
+    setStateUp = () => {
+        this.setState({
+            value : this.state.value + 1
+        }, () => this.props.propsReceive(this.state.value))
+    }
+
+    setStateDown = () => {
+        if(this.state.value > 0 ) {
+            this.setState({
+                value : this.state.value - 1
+            }, () => this.props.propsReceive(this.state.value))
+        }
+    }
     render(){
         return(
             <CounterContainer>
-                <Button>-</Button>
-                <Input disabled></Input>
-                <Button>+</Button>
+                <Button onClick={this.setStateDown}>-</Button>
+                <Input disabled value={this.state.value}></Input>
+                <Button onClick={this.setStateUp}>+</Button>
             </CounterContainer>
         )
     }
