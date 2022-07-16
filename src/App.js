@@ -1,10 +1,10 @@
-import Reusable from "./materi/reusable";
+import Tugas2 from "./Tugas/Tugas2";
 
 
 function App() {
   return (
     <div>  
-      <Reusable />
+      <Tugas2 />
     </div>
   );
 }

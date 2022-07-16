@@ -6,6 +6,7 @@ import Skill from "./Skill";
 import Tech from "./Tech";
 import Forem from "./Forem";
 import Footer from "./Footer";
+import Reusable from "../../materi/reusable";
 
 
 class Tugas2 extends React.Component {
@@ -15,6 +16,7 @@ class Tugas2 extends React.Component {
                 <Atas></Atas>
                 <Bio></Bio>
                 <Skill></Skill>
+                <Reusable></Reusable>
                 <Tech></Tech>
                 <Forem></Forem>
                 <Footer></Footer>

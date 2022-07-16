@@ -3,6 +3,7 @@ import Head from "./head";
 import Product from "./product";
 
 class Reusable extends react.Component {
+    
     state = {
         value: 0
     }
