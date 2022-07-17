@@ -82,15 +82,6 @@ class Formm extends React.Component {
 
         const v = new Validator(data, rules);
         if (v.passes()) {
-            // alert(`
-            // TERIMA KASIH TELAH MELAKUKAN REGISTRASI 
-            // =======================================
-        
-            // Nama Anda : ${this.state.nama}
-            // Password Anda : ${this.state.password}
-            // Email Anda : ${this.state.email}
-        
-            // ======================================`);
             swal("Good job!", `
             TERIMA KASIH TELAH MELAKUKAN REGISTRASI 
             =======================================
@@ -117,13 +108,6 @@ class Formm extends React.Component {
                 ]
             })
         }
-
-        // this.setState({
-        //     nama: '',
-        //     password: '',
-        //     email: '',
-        //     errors: []
-        // })
     }
 
     handleOnChange = (e) => {
