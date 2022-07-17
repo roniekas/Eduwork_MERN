@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import swal from 'sweetalert';
 
 const Validator = require('Validator');
 const Wrapper = styled.div`
@@ -81,7 +82,16 @@ class Formm extends React.Component {
 
         const v = new Validator(data, rules);
         if (v.passes()) {
-            alert(`
+            // alert(`
+            // TERIMA KASIH TELAH MELAKUKAN REGISTRASI 
+            // =======================================
+        
+            // Nama Anda : ${this.state.nama}
+            // Password Anda : ${this.state.password}
+            // Email Anda : ${this.state.email}
+        
+            // ======================================`);
+            swal("Good job!", `
             TERIMA KASIH TELAH MELAKUKAN REGISTRASI 
             =======================================
         
@@ -89,7 +99,13 @@ class Formm extends React.Component {
             Password Anda : ${this.state.password}
             Email Anda : ${this.state.email}
         
-            ======================================`);
+            ======================================`, "success");
+            this.setState({
+                nama: '',
+                password: '',
+                email: '',
+                errors: []
+            })
         } else if (v.fails()) {
             const errors = v.getErrors();
             console.log(errors)
