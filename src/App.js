@@ -1,11 +1,11 @@
-import Tugas3 from "./Tugas/Tugas3";
+import Tugas5 from "./Tugas/Tugas5";
 
 
 
 function App() {
   return (
     <div>  
-      <Tugas3 />
+      <Tugas5 />
     </div>
   );
 }
